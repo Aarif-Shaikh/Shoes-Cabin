@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hero">
+        <nav>
+            <img src="menu.png" id="menuImg">
+            <img src="logo.png" id="logo">
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Contemporary</a></li>
+                <li><a href="">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div id="lampContainer">
+            <img src="lamp.png" id="lamp">
+            <img src="light.png" id="light" class="light">
+        </div>
+
+        <div id="textContainer">
+            <h1>Latest <br> in Lighting</h1>
+            <p>This is the first lamp from our company. We're making a huge collection of modern lamps in all categories from home use to office use</p>
+            <a href="">Check All Collections</a>
+            <div id="control">
+                <p>04</p>
+                <div id="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+
+        function toggleBtn() {
+            btn.classList.toggle("active");
+            light.classList.toggle("onn");
+        }
+    </script>
+
+</body>
+</html>
