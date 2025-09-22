@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Country API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="navTitle"><a href="/">Where in the world?</a></h2>
+            <p class="themeChanger"><i id="themeChangerIcon" class="fa-regular fa-moon"></i> Dard Mode</p>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section1">
+            <div class="searchEngines">
+                <div class="inputSearch">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for a country...">
+                </div>
+
+                <div class="regionSearch">
+                    <select name="select" id="select">
+                    <option hidden >Filter by Region</option>
+                    <option name="Africa" id="">Africa</option>
+                    <option name="America" id="">America</option>
+                    <option name="Asia" id="">Asia</option>
+                    <option name="Europe" id="">Europe</option>
+                    <option name="Oceania" id="">Oceania</option>
+                </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="cardsContainer"></section>
+    </main>
+</body>
+</html>

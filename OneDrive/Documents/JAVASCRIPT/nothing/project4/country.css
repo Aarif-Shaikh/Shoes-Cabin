@@ -1,0 +1,149 @@
+main {
+    padding: 24px;
+}
+
+.contentContainer {
+    max-width: 1300px;
+    margin: 60px auto;
+}
+
+.contentContainer .backBtn {
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.2);
+    padding: 6px 32px;
+    border-radius: 6px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.contentContainer .countryInformation {
+    margin-top: 62px;
+}
+
+.contentContainer .countryInformation img {
+    width: 50%;
+}
+
+.contentContainer .countryInformation {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.contentContainer .countryInformation .countryDetails .countryTitle {
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.contentContainer .countryInformation .countryDetails .countryDetailsText {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    column-gap: 25%;
+    max-height: 144px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.contentContainer .countryInformation .countryDetails .borderCountries {
+    margin-top: 48px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.contentContainer .countryInformation .countryDetails .borderCountries a {
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+    padding: 3px 20px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@media (max-width: 1168px) {
+    .contentContainer .countryInformation {
+        gap: 6%;
+    }
+}
+
+@media (max-width: 900px) {
+    .contentContainer .countryInformation .countryDetails .countryTitle {
+        margin-bottom: 25px;
+    }
+
+    .contentContainer .countryInformation .countryDetails .borderCountries {
+        margin-top: 30px;
+    }
+
+    .contentContainer .countryInformation .countryDetails .countryDetailsText {
+        column-gap: 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contentContainer .countryInformation {
+        flex-direction: column;
+        /* border: 2px solid black; */
+    }
+
+    .contentContainer .countryInformation img {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .contentContainer .countryInformation .countryDetails {
+        width: 80%;
+        /* border: 2px solid black; */
+    }
+
+    .contentContainer {
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 550px) {
+
+    main {
+        padding: 12px;
+    }
+
+    .contentContainer {
+        margin: 25px auto;
+    }
+
+    .contentContainer .countryInformation .countryDetails .countryDetailsText {
+        max-height: none;
+    }
+
+    .contentContainer .countryInformation img {
+        width: 90%;
+        margin-bottom: 35px;
+    }
+
+    .contentContainer .countryInformation {
+        margin-top: 45px;
+    }
+
+    .contentContainer .countryInformation .countryDetails {
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    main {
+        padding: 8px;
+    }
+
+    .contentContainer .countryInformation img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contentContainer .countryInformation .countryDetails {
+        width: 100%;
+    }
+}
